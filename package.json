@@ -1,6 +1,6 @@
 {
   "name": "megapix-image",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "",
   "main": "src/megapix-image.js",
   "repository": {
