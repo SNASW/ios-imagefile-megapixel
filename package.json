@@ -1,0 +1,16 @@
+{
+  "name": "megapix-image",
+  "version": "0.1.2",
+  "description": "",
+  "main": "src/megapix-image.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stomita/ios-imagefile-megapixel.git"
+  },
+  "author": "Shinichi Tomita",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stomita/ios-imagefile-megapixel/issues"
+  },
+  "homepage": "https://github.com/stomita/ios-imagefile-megapixel"
+}
