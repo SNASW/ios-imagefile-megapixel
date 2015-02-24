@@ -168,7 +168,7 @@
   }
 
   var URL = window && window.URL && window.URL.createObjectURL ? window.URL :
-            window.webkitURL && window.webkitURL.createObjectURL ? window.webkitURL :
+            window && window.webkitURL && window.webkitURL.createObjectURL ? window.webkitURL :
             null;
 
   /**
