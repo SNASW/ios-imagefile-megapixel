@@ -167,7 +167,7 @@
     }
   }
 
-  var URL = window.URL && window.URL.createObjectURL ? window.URL :
+  var URL = window && window.URL && window.URL.createObjectURL ? window.URL :
             window.webkitURL && window.webkitURL.createObjectURL ? window.webkitURL :
             null;
 
@@ -175,7 +175,7 @@
    * MegaPixImage class
    */
   function MegaPixImage(srcImage) {
-    if (window.Blob && srcImage instanceof Blob) {
+    if (window && window.Blob && srcImage instanceof Blob) {
       if (!URL) { throw Error("No createObjectURL function found to create blob url"); }
       var img = new Image();
       img.src = URL.createObjectURL(srcImage);
