@@ -167,15 +167,15 @@
     }
   }
 
-  var URL = window && window.URL && window.URL.createObjectURL ? window.URL :
-            window && window.webkitURL && window.webkitURL.createObjectURL ? window.webkitURL :
+  var URL = typeof(window) !== 'undefined' && window.URL && window.URL.createObjectURL ? window.URL :
+            typeof(window) !== 'undefined' && window.webkitURL && window.webkitURL.createObjectURL ? window.webkitURL :
             null;
 
   /**
    * MegaPixImage class
    */
   function MegaPixImage(srcImage) {
-    if (window && window.Blob && srcImage instanceof Blob) {
+    if (typeof(window) !== 'undefined' && window.Blob && srcImage instanceof Blob) {
       if (!URL) { throw Error("No createObjectURL function found to create blob url"); }
       var img = new Image();
       img.src = URL.createObjectURL(srcImage);
